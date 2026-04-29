@@ -6,7 +6,7 @@ function App() {
     const [jobs, setJobs] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState('');
 
-    const API_URL = 'http://localhost:5000/api/jobs';
+    const API_URL = 'https://golden-age-job-matcher.onrender.com/api/jobs';
 
     useEffect(() => {
         axios.get(API_URL)
